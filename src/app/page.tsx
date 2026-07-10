@@ -1,7 +1,17 @@
+import { About } from "@/components/sections/About";
+import { Contact } from "@/components/sections/Contact";
+import { Experience } from "@/components/sections/Experience";
+import { Hero } from "@/components/sections/Hero";
+import { Projects } from "@/components/sections/Projects";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Carolina Calle</h1>
+    <main className="min-h-screen bg-white text-neutral-950">
+      <Hero />
+      <About />
+      <Experience />
+      <Projects />
+      <Contact />
     </main>
   );
 }
