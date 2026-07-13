@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
 export const metadata: Metadata = {
-  title: "Carolina Calle | Frontend Developer",
+  title: "Carolina Calle | React / Front-End Developer",
   description:
-    "Portfolio of Carolina Calle, frontend developer specialized in React, TypeScript, and web/mobile apps.",
+    "Portfolio of Carolina Calle, React / Front-End Developer focused on web and mobile applications.",
 };
 
 export default function RootLayout({
@@ -13,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={inter.variable}>
+      <body className="bg-white text-neutral-950 antialiased">{children}</body>
     </html>
   );
 }
