@@ -1,19 +1,19 @@
 import { ReactNode } from "react";
 import { Container } from "./Container";
+import { SectionHeading } from "./SectionHeading";
 
 type SectionProps = {
   id?: string;
   title?: string;
   children: ReactNode;
+  className?: string;
 };
 
-export function Section({ id, title, children }: SectionProps) {
+export function Section({ id, title, children, className = "" }: SectionProps) {
   return (
-    <section id={id} className="py-16">
+    <section id={id} className={`py-16 ${className}`}>
       <Container>
-        {title ? (
-          <h2 className="mb-6 text-2xl font-semibold tracking-tight">{title}</h2>
-        ) : null}
+        {title ? <SectionHeading title={title} /> : null}
         {children}
       </Container>
     </section>
