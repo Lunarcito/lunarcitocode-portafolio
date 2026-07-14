@@ -1,12 +1,11 @@
 import { siteConfig } from "@/data/site";
 import { Container } from "../ui/Container";
-import { ContentWidth } from "../ui/ContentWidth";
 
 export function Hero() {
   return (
-    <section id="top" className="py-20 md:py-24">
+    <section id="top" className="py-16 md:py-20">
       <Container>
-        <ContentWidth>
+        <div>
           <p className="mb-3 text-sm text-neutral-500">{siteConfig.location}</p>
 
           <h1 className="text-4xl font-semibold tracking-tight text-neutral-950 md:text-5xl">
@@ -15,9 +14,7 @@ export function Hero() {
 
           <p className="mt-4 text-lg text-neutral-700">{siteConfig.role}</p>
 
-          <p className="mt-6 max-w-2xl text-base leading-7 text-neutral-600">
-            {siteConfig.intro}
-          </p>
+          <p className="mt-6 text-base leading-8 text-neutral-600">{siteConfig.intro}</p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -38,7 +35,7 @@ export function Hero() {
               GitHub
             </a>
           </div>
-        </ContentWidth>
+        </div>
       </Container>
     </section>
   );

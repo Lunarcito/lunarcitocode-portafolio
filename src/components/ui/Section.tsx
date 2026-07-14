@@ -11,7 +11,7 @@ type SectionProps = {
 
 export function Section({ id, title, children, className = "" }: SectionProps) {
   return (
-    <section id={id} className={`py-16 ${className}`}>
+    <section id={id} className={`py-20 md:py-24 ${className}`}>
       <Container>
         {title ? <SectionHeading title={title} /> : null}
         {children}
