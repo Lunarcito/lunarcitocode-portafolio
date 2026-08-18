@@ -5,12 +5,35 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Carolina Calle | React / Front-End Developer",
+  title: {
+    default: "Carolina Calle | Frontend Engineer",
+    template: "%s | Carolina Calle",
+  },
   description:
-    "Portfolio of Carolina Calle, React / Front-End Developer focused on web and mobile applications.",
+    "Frontend Engineer building accessible, high-performance web applications with React, Next.js, and TypeScript.",
+  openGraph: {
+    title: "Carolina Calle | Frontend Engineer",
+    description:
+      "Frontend Engineer building accessible, high-performance web applications with React, Next.js, and TypeScript.",
+    url: "/",
+    siteName: "Carolina Calle",
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Carolina Calle | Frontend Engineer",
+    description:
+      "Frontend Engineer building accessible, high-performance web applications with React, Next.js, and TypeScript.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
