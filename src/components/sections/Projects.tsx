@@ -4,17 +4,19 @@ import { Section } from "../ui/Section";
 export function Projects() {
   return (
     <Section id="projects" title="Selected Projects">
-      <div className="space-y-6">
+      <div className="space-y-8">
         {projects.map((project) => (
           <article
-            key={project.title}
-            className="rounded-2xl border border-neutral-200 p-6"
+            key={project.id}
+            className="rounded-2xl border border-neutral-200 bg-white p-6"
           >
-            <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+            <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
               <div className="max-w-2xl">
-                <p className="text-sm text-neutral-500">{project.status}</p>
+                <p className="text-sm text-neutral-500">
+                  {project.category} · {project.status}
+                </p>
 
-                <h3 className="mt-1 text-lg font-semibold text-neutral-900">
+                <h3 className="mt-1 text-xl font-semibold tracking-tight text-neutral-900">
                   {project.title}
                 </h3>
 
@@ -22,7 +24,19 @@ export function Projects() {
                   {project.description}
                 </p>
 
-                <div className="mt-4 flex flex-wrap gap-2">
+                <ul className="mt-5 space-y-2 text-sm leading-6 text-neutral-600">
+                  {project.highlights.map((highlight) => (
+                    <li key={highlight} className="flex gap-2">
+                      <span
+                        aria-hidden="true"
+                        className="mt-2 size-1.5 shrink-0 rounded-full bg-neutral-900"
+                      />
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-5 flex flex-wrap gap-2">
                   {project.stack.map((item) => (
                     <span
                       key={item}
@@ -34,15 +48,16 @@ export function Projects() {
                 </div>
               </div>
 
-              <div className="flex gap-4 text-sm">
+              <div className="flex shrink-0 gap-4 text-sm">
                 {project.live ? (
                   <a
                     href={project.live}
                     target="_blank"
-                    rel="noreferrer"
-                    className="text-neutral-900 underline underline-offset-4"
+                    rel="noopener noreferrer"
+                    aria-label={`Open ${project.title} live demo in a new tab`}
+                    className="font-medium text-neutral-900 underline underline-offset-4 transition-colors hover:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-4"
                   >
-                    Live
+                    Live demo
                   </a>
                 ) : null}
 
@@ -50,10 +65,11 @@ export function Projects() {
                   <a
                     href={project.github}
                     target="_blank"
-                    rel="noreferrer"
-                    className="text-neutral-900 underline underline-offset-4"
+                    rel="noopener noreferrer"
+                    aria-label={`Open ${project.title} source code on GitHub in a new tab`}
+                    className="font-medium text-neutral-900 underline underline-offset-4 transition-colors hover:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-4"
                   >
-                    GitHub
+                    Source code
                   </a>
                 ) : null}
               </div>
