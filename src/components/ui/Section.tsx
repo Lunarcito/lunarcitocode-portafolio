@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+
 import { Container } from "./Container";
 import { SectionHeading } from "./SectionHeading";
 
@@ -11,7 +12,7 @@ type SectionProps = {
 
 export function Section({ id, title, children, className = "" }: SectionProps) {
   return (
-    <section id={id} className={`scroll-mt-20 py-20 md:py-24 ${className}`}>
+    <section id={id} className={`scroll-mt-16 py-8 md:py-12 ${className}`}>
       <Container>
         {title ? <SectionHeading title={title} /> : null}
         {children}

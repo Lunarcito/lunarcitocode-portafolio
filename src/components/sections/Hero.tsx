@@ -1,9 +1,10 @@
 import { siteConfig } from "@/data/site";
+
 import { Container } from "../ui/Container";
 
 export function Hero() {
   return (
-    <section id="top" className="py-16 md:py-20">
+    <section id="top" className="py-10 md:py-14">
       <Container>
         <div>
           <p className="mb-3 text-sm text-neutral-500">{siteConfig.location}</p>
