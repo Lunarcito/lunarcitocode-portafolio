@@ -1,12 +1,12 @@
 export const siteConfig = {
   name: "Carolina Calle",
-  role: "React / Front-End Developer",
+  role: "Frontend Engineer",
   location: "Barcelona, Spain",
   email: "calle.carolina@gmail.com",
   linkedin: "https://www.linkedin.com/in/carolinacallec",
   github: "https://github.com/Lunarcito",
   intro:
-    "React / Front-End Developer specialized in responsive web and mobile applications with React, TypeScript, JavaScript, and Capacitor.",
+    "I build accessible, high-performance web applications with React, Next.js, and TypeScript, from polished interfaces to reliable full-stack product flows.",
   summary:
-    "React / Front-End Developer focused on building responsive web and mobile applications with React, TypeScript, JavaScript, and Capacitor. I build product-facing frontend features and reusable component systems, with additional full-stack experience in Node.js, Firebase, and REST APIs.",
+    "Frontend Engineer focused on building accessible, responsive, and maintainable product experiences with React, Next.js, and TypeScript. My work includes reusable component systems, server-side data access, authentication, automated testing, CI workflows, and cloud deployment.",
 };

@@ -54,8 +54,8 @@ export function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`Open ${project.title} live demo in a new tab`}
-                    className="font-medium text-neutral-900 underline underline-offset-4 transition-colors hover:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-4"
+                    aria-label={`Live demo: ${project.title} (opens in a new tab)`}
+                    className="rounded-sm font-medium text-neutral-900 underline underline-offset-4 transition-colors hover:text-neutral-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-4"
                   >
                     Live demo
                   </a>
@@ -66,8 +66,8 @@ export function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`Open ${project.title} source code on GitHub in a new tab`}
-                    className="font-medium text-neutral-900 underline underline-offset-4 transition-colors hover:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-4"
+                    aria-label={`Source code: ${project.title} on GitHub (opens in a new tab)`}
+                    className="rounded-sm font-medium text-neutral-900 underline underline-offset-4 transition-colors hover:text-neutral-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-4"
                   >
                     Source code
                   </a>
