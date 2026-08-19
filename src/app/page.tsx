@@ -9,7 +9,11 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-white text-neutral-950">
+      <main
+        id="main-content"
+        className="min-h-screen bg-white text-neutral-950"
+        tabIndex={-1}
+      >
         <Hero />
         <About />
         <Experience />

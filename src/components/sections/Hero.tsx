@@ -20,8 +20,9 @@ export function Hero() {
             <a
               href={siteConfig.linkedin}
               target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center rounded-full bg-neutral-950 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-neutral-800"
+              rel="noopener noreferrer"
+              aria-label="Visit Carolina Calle's LinkedIn profile in a new tab"
+              className="inline-flex items-center rounded-full bg-neutral-950 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-4"
             >
               LinkedIn
             </a>
@@ -29,8 +30,9 @@ export function Hero() {
             <a
               href={siteConfig.github}
               target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center rounded-full border border-neutral-300 px-5 py-3 text-sm font-medium text-neutral-900 transition-colors hover:bg-neutral-50"
+              rel="noopener noreferrer"
+              aria-label="Visit Carolina Calle's GitHub profile in a new tab"
+              className="inline-flex items-center rounded-full border border-neutral-300 px-5 py-3 text-sm font-medium text-neutral-900 transition-colors hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-4"
             >
               GitHub
             </a>
