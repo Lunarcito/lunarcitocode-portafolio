@@ -6,6 +6,12 @@ export type Project = {
   description: string;
   highlights: string[];
   stack: string[];
+  image?: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  };
   live?: string;
   github?: string;
 };
@@ -37,6 +43,12 @@ export const projects: Project[] = [
       "GitHub Actions",
       "AWS Amplify",
     ],
+    image: {
+      src: "/images/grounded-login.webp",
+      alt: "Grounded sign-in screen for the wellness and habit-tracking application",
+      width: 1600,
+      height: 1383,
+    },
     live: "https://main.d2p9ygb596mf0b.amplifyapp.com/",
     github: "https://github.com/Lunarcito/grounded-wellness-app",
   },
