@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
 import "./globals.css";
+
+const siteUrl = "https://main.d10sbmir8ourmp.amplifyapp.com";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -9,26 +12,27 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Carolina Calle | Frontend Engineer",
     template: "%s | Carolina Calle",
   },
   description:
-    "Frontend Engineer building accessible, high-performance web applications with React, Next.js, and TypeScript.",
+    "Frontend Engineer building thoughtful product experiences with React, Next.js, and TypeScript.",
   openGraph: {
     title: "Carolina Calle | Frontend Engineer",
     description:
-      "Frontend Engineer building accessible, high-performance web applications with React, Next.js, and TypeScript.",
+      "Frontend Engineer building thoughtful product experiences with React, Next.js, and TypeScript.",
     url: "/",
     siteName: "Carolina Calle",
-    locale: "en_CA",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary",
     title: "Carolina Calle | Frontend Engineer",
     description:
-      "Frontend Engineer building accessible, high-performance web applications with React, Next.js, and TypeScript.",
+      "Frontend Engineer building thoughtful product experiences with React, Next.js, and TypeScript.",
   },
   robots: {
     index: true,
