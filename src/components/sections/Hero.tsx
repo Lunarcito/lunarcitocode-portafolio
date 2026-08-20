@@ -4,9 +4,9 @@ import { Container } from "../ui/Container";
 
 export function Hero() {
   return (
-    <section id="top" className="py-10 md:py-14">
+    <section id="top" className="pb-8 pt-10 md:pb-10 md:pt-14">
       <Container>
-        <div className="max-w-4xl">
+        <div className="max-w-5xl">
           <p className="mb-3 text-sm text-neutral-500">{siteConfig.location}</p>
 
           <h1 className="text-4xl font-semibold tracking-tight text-neutral-950 md:text-5xl">
@@ -15,7 +15,7 @@ export function Hero() {
 
           <p className="mt-4 text-lg text-neutral-700">{siteConfig.role}</p>
 
-          <p className="mt-6 max-w-3xl text-base leading-8 text-neutral-600">
+          <p className="mt-6 max-w-4xl text-base leading-8 text-neutral-600">
             {siteConfig.intro}
           </p>
 
