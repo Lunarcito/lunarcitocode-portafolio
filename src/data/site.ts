@@ -6,7 +6,7 @@ export const siteConfig = {
   linkedin: "https://www.linkedin.com/in/carolinacallec",
   github: "https://github.com/Lunarcito",
   intro:
-    "I build accessible, high-performance web applications with React, Next.js, and TypeScript, from polished interfaces to reliable full-stack product flows.",
+    "Frontend Engineer with 4+ years of experience building accessible, high-performance web applications with React, TypeScript, and Next.js.",
   summary:
-    "Frontend Engineer focused on building accessible, responsive, and maintainable product experiences with React, Next.js, and TypeScript. My work includes reusable component systems, server-side data access, authentication, automated testing, CI workflows, and cloud deployment.",
+    "I build responsive product experiences, reusable component systems, and reliable frontend features across web and mobile applications. My work spans frontend architecture, REST API integration, automated testing, accessibility, performance optimization, and CI/CD with GitHub Actions, with additional full-stack experience in Node.js, Supabase, PostgreSQL, Prisma, and Firebase.",
 };
