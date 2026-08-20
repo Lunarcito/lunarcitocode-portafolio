@@ -3,12 +3,12 @@ import { Section } from "../ui/Section";
 
 export function Projects() {
   return (
-    <Section id="projects" title="Selected Projects">
+    <Section id="projects" title="Featured Project">
       <div className="space-y-8">
         {projects.map((project) => (
           <article
             key={project.id}
-            className="rounded-2xl border border-neutral-200 bg-white p-6"
+            className="rounded-2xl border border-neutral-200 bg-neutral-50 p-6"
           >
             <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
               <div className="max-w-2xl">
