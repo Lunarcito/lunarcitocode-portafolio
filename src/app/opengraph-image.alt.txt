@@ -1,0 +1,1 @@
+Carolina Calle, Frontend Engineer. Building polished, responsive applications with React, Next.js and TypeScript.
